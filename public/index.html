@@ -2,6 +2,8 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
+    <!-- 解决在src中引用网络图片无法显示的问题，这因为在引用链接时,浏览器对地址发起请求加上了refre这个请求头,而有些服务器能根据refre反盗所以引用失败返回403。 -->
+    <meta name="referrer" content="no-referrer"></meta>
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
